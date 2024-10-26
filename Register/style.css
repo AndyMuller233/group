@@ -59,7 +59,3 @@ button:hover {
     color: #007bff;
     text-decoration: none;
 }
-
-.toggle-link a:hover {
-    text-decoration: underline;
-}
