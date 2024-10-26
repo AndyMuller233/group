@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Center the login container */
 .container {
     display: none;
     width: 300px;
@@ -59,8 +58,4 @@ button:hover {
 .toggle-link a {
     color: #007bff;
     text-decoration: none;
-}
-
-.toggle-link a:hover {
-    text-decoration: underline;
 }

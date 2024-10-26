@@ -1,5 +1,5 @@
- // Helper function to retrieve users from local storage
- function getStoredUsers() {
+// Helper function to retrieve users from local storage
+function getStoredUsers() {
     return JSON.parse(localStorage.getItem('users')) || [];
 }
 
@@ -43,9 +43,8 @@ document.getElementById('login-btn').onclick = () => {
     const user = users.find(user => user.username === username && user.password === password);
     if (user) {
         alert('Login successful!');
-        document.getElementById('dashboard').style.display = 'block';
-        document.getElementById('login-container').classList.remove('active');
-        document.getElementById('home-content').classList.remove('hidden');
+        localStorage.setItem('isLoggedIn', 'true'); // Set flag in localStorage
+        window.location.href = '../dashboard/index.html'; // Redirect to dashboard
     } else {
         alert('Invalid username or password.');
     }
