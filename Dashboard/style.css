@@ -43,7 +43,6 @@ body {
     padding: 20px;
 }
 
-/* Hide home content by default */
 .hidden {
     display: none;
 }
