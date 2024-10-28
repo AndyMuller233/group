@@ -3,22 +3,27 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
 }
 
 #dashboard {
-    display: flex;
+    display: none;
+    height: 100vh;
     width: 100%;
 }
 
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 250px;
+    height: 100%;
     background-color: #343a40;
     color: white;
     padding-top: 20px;
-    height: 100vh;
-    position: fixed;
 }
 
 .sidebar a {
@@ -38,6 +43,16 @@ body {
     padding: 20px;
 }
 
+/* Hide home content by default */
 .hidden {
     display: none;
 }
+
+.home-content {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #343a40;
+} 
