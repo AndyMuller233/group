@@ -6,8 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
+    background-color: rgb(141, 141, 193);
 }
+
+
 
 .container {
     display: none;
